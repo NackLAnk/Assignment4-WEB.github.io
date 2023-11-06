@@ -433,16 +433,26 @@
                 <h2 class="abril-fatface">Perfect Holiday</h2>
                 <br class="select-disable">
                 <div class="gallery-container">
-                    <div class="item-a"></div>
-                    <div class="item-a"></div>
-                    <div class="item-a"></div>
-                    <div class="item-a"></div>
+                    <div class="item-a">
+                    </div>
+                    <div class="item-a">
+                    </div>
+                    <div class="item-a">
+                    </div>
+                    <div class="item-a">
+                    </div>
                 </div>
             </div>
             <br class="select-disable">
             <br class="select-disable">
         </div>
         <script src="js/accordion.js"></script>
+
+        <div id="popupMessage" class="popup p-5">
+            <span class="close" id="closeMessage">&times;</span>
+            <p>Top!</p>
+        </div>
+        <script src="script.js"></script>
 
         <!-- About US -->
 
@@ -739,7 +749,7 @@
                 <span class="fab-dots fab-dots-3"></span>
             </label>
             <div class="fab-wheel">
-                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
+                <a id="showMessage" class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
                     <i class="fa fa-arrow-up"></i>
                 </a>
                 <a class="fab-action fab-action-2 text-decoration-none" onclick="audio.play();" href="game.html">
@@ -830,6 +840,26 @@
                 </div>
             </div>
         </footer>
+        <script>
+            const showMessageButton = document.getElementById('showMessage');
+            const popupMessage = document.getElementById('popupMessage');
+            const closeMessageButton = document.getElementById('closeMessage');
+
+            showMessageButton.addEventListener('click', () => {
+                popupMessage.style.display = 'block';
+            });
+
+            closeMessageButton.addEventListener('click', () => {
+                popupMessage.style.display = 'none';
+            });
+
+            const actionButton = document.getElementById('actionButton');
+            actionButton.addEventListener('click', () => {
+                // Добавьте здесь свой код для обработки действия
+                alert('Вы нажали на кнопку "Действие"');
+            });
+
+        </script>
         <div class="overlay" id="overlay"></div>
         <script src="js/audiosound.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
