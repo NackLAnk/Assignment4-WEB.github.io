@@ -533,3 +533,9 @@ body {
     top: 3.4rem;
     border-radius: 0 0 50px 50px;
 }
+
+/* services */
+
+.services-img {
+    border-radius: 12px;
+}

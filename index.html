@@ -66,7 +66,7 @@
                         <li><a class="nav-link navbar-padding navbar-text-active" href="index.html">HOME</a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">SERVICES</a></li>
+                        <li><a class="nav-link navbar-padding navbar-active" href="services.html">SERVICES</a></li>
                     </ul>
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-active" href="#">PRICING</a></li>
@@ -739,13 +739,13 @@
                 <span class="fab-dots fab-dots-3"></span>
             </label>
             <div class="fab-wheel">
-                <a class="fab-action fab-action-1 text-decoration-none" href="#navbar">
+                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
                     <i class="fa fa-arrow-up"></i>
                 </a>
-                <a class="fab-action fab-action-2 text-decoration-none" href="game.html">
+                <a class="fab-action fab-action-2 text-decoration-none" onclick="audio.play();" href="game.html">
                     <i class="fa fa-play"></i>
                 </a>
-                <a class="fab-action fab-action-3 text-decoration-none">
+                <a class="fab-action fab-action-3 text-decoration-none" onclick="audio.play();" href="services.html">
                     <i class="fas fa-info"></i>
                 </a>
             </div>
@@ -831,6 +831,7 @@
             </div>
         </footer>
         <div class="overlay" id="overlay"></div>
+        <script src="js/audiosound.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/form_dropdown.js"></script>
         <script src="js/form_validation.js"></script>

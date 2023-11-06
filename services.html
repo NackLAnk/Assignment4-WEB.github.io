@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yesteryear">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/tour_style.css">
-    <link rel="stylesheet" href="css/gamestyle.css">
-    <title>!#$@#??</title>
+    <title>Services</title>
 </head>
 
 <body>
@@ -74,7 +73,7 @@
                         <li><a class="nav-link navbar-padding navbar-active" href="#">PRICING</a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">TOURS</a></li>
+                        <li><a class="nav-link navbar-padding navbar-active" href="Tour.html">TOURS</a></li>
                     </ul>
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-active" href="#Contact">CONTACT</a></li>
@@ -224,20 +223,63 @@
             <!-- The slideshow/carousel -->
             <div class="carousel-inner select-disable">
                 <div class="carousel-item active">
-                    <img src="images/game.jpg" alt="c-wp1" class="d-block w-100">
+                    <img src="images/carousel/carousel2-wp1.jpg" alt="c-wp1" class="d-block w-100">
+                    <h2 class="carousel-text">About our Services <br> <span class="h4 px-5">Home / Services</span></h2>
                 </div>
             </div>
         </div>
 
-        <!-- Game -->
+        <!-- Information -->
 
         <div class="container-fluid py-5">
+            <div class="container py-5 d-flex">
+                <div class="">
+                    <h2 class="yesteryear">Our Most</h2>
+                    <h2 class="abril-fatface pb-2">Popular Tours</h2>
+                    <h5 class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga aut error, sit suscipit quos laudantium eveniet consectetur. Voluptatem quia ducimus fugiat, dolores iusto laudantium non itaque culpa? Sint, veritatis.</h5>
+                    <a class="btn btn-primary px-5" href="#">Read more <i class="fa fa-arrow-right"
+                        aria-hidden="true"></i></a>
+                </div>
+                <div class="d-flex justify-content-end px-5">
+                    <img class="services-img" src="images/tourist.jpg" alt="touris" width="600px" height="400px">
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Subscription -->
+
+        <div class="container-fluid py-5" style="background-color: #25BDC1;">
             <div class="container py-5">
-                <div class="py-5">
-                    <div class="py-5">
-                        <div id="tiles"></div>
+                <div class="d-flex justify-content-between">
+                    <Span class="px-5 abril-fatface2 text-white" style="font-size: 30px;">Subscribe to Get Daily
+                        News.</Span>
+                    <div class="d-flex justify-content-end">
+                        <a class="btn btn-primary px-5" href="#">Read more <i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Help Panel -->
+
+        <div class="fab-wrapper">
+            <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+            <label class="fab" for="fabCheckbox">
+                <span class="fab-dots fab-dots-1"></span>
+                <span class="fab-dots fab-dots-2"></span>
+                <span class="fab-dots fab-dots-3"></span>
+            </label>
+            <div class="fab-wheel">
+                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+                <a class="fab-action fab-action-2 text-decoration-none" href="game.html">
+                    <i class="fa fa-play"></i>
+                </a>
+                <a class="fab-action fab-action-3 text-decoration-none" href="#">
+                    <i class="fas fa-info"></i>
+                </a>
             </div>
         </div>
 
@@ -321,7 +363,7 @@
             </div>
         </footer>
         <div class="overlay" id="overlay"></div>
-        <script src="js/game.js"></script>
+        <script src="js/audiosound.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/form_dropdown.js"></script>
         <script src="js/form_validation.js"></script>
