@@ -6,29 +6,8 @@ let imageURLs = [
   "images/accordion/4.jpg",
 ];
 
-//initially empty
-let deviceType = "";
-let events = {
-  mouse: {
-    start: "mouseover",
-    end: "mouseout",
-  },
-  touch: {
-    start: "touchstart",
-    end: "touchend",
-  },
-};
-const isTouchDevice = () => {
-  try {
-    document.createEvent("TouchEvent");
-    deviceType = "touch";
-    return true;
-  } catch (e) {
-    deviceType = "mouse";
-    return false;
-  }
-};
-isTouchDevice();
+let deviceType = "mouse"; // Убрал функцию isTouchDevice, так как мы будем использовать события мыши
+
 items.forEach((item, index) => {
   let img = document.createElement("img");
   img.setAttribute("src", imageURLs[index]);
@@ -36,13 +15,16 @@ items.forEach((item, index) => {
   img.style.height = "100%";
   img.style.objectFit = "cover";
   item.appendChild(img);
-  //Initial CSS properties for all items
+
+  // Настроим CSS свойства для всех элементов
   item.style.flex = "1";
   item.style.transition = "flex 0.5s ease";
-  item.addEventListener(events[deviceType].start, () => {
-    item.style.flex = "4"; //Expand the item
+
+  // Добавим обработчики событий для раскрытия и закрытия элементов
+  item.addEventListener("mouseover", () => {
+    item.style.flex = "4"; // Раскрыть элемент
   });
-  item.addEventListener(events[deviceType].end, () => {
-    item.style.flex = "1"; //Contract the item
+  item.addEventListener("mouseout", () => {
+    item.style.flex = "1"; // Закрыть элемент
   });
 });
