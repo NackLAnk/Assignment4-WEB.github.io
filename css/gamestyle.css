@@ -1,0 +1,56 @@
+.container-fluid {
+    background: linear-gradient(90deg,
+            #ff0000, #ff8000, #ffff00, #80ff00, #00ff00, #00ff80, #00ffff, #0080ff, #0000ff, #8000ff, #ff00ff, #ff0080, #ff0000);
+    background-size: 2000% 100%;
+    animation: gradient 30s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+#tiles {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 5px #2e2e2e;
+    transition: transform 0.3s ease-in-out;
+}
+
+.selected,
+.selected:hover {
+    background-color: #FFF;
+    border: none;
+    color: white;
+    transition: 0s;
+}
+
+.selected:active {
+    transition: all 99999s;
+}
+
+#tiles .btn {
+    font-size: 20px;
+    height: 80px;
+    width: 25%;
+    cursor: pointer;
+    transition: 0s;
+}
+
+#tiles .btn:active {
+    transition: all 99999s;
+}
