@@ -68,6 +68,7 @@
 
 .form {
     margin-top: 30px;
+    transition: all 0.2s ease;
 }
 
 .form .field {
@@ -298,6 +299,7 @@ a.google span {
     z-index: 3;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease;
 }
 
 .forms-sign.show {

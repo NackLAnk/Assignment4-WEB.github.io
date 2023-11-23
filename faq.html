@@ -341,7 +341,7 @@
                             </div>
                             <div class="py-1"></div>
                             <div class="accordion-item">
-                                <button id="accordion-button-5" class="button-end" aria-expanded="false"><span
+                                <button id="accordion-button-5" aria-expanded="false"><span
                                         class="accordion-title">PAY INFORMATION</span></button>
                                 <div class="accordion-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -351,7 +351,7 @@
                             </div>
                             <div class="py-1"></div>
                             <div class="accordion-item">
-                                <button id="accordion-button-1" class="button-primary" aria-expanded="false"><span
+                                <button id="accordion-button-1" aria-expanded="false"><span
                                         class="accordion-title">FOOD</span></button>
                                 <div class="accordion-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -405,9 +405,10 @@
                         <div>
                             <form role="search" onsubmit="return searchPage()">
                                 <div class="search-form">
-                                    <input class="search" id="searchInput" placeholder="Search" autofocus required />
-                                    <a href="#" class="search-button" onclick="searchPage()"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
+                                        <input class="search" id="searchInput" placeholder="Search" autofocus/>
+                                        <span class="tooltip-text" id="searchTooltip">Enter your search term. (Example: "2023", "Hello")</span>
+                                        <a href="#" class="search-button" onclick="searchPage()"><i class="fa fa-search" aria-hidden="true"></i></a>
+                                    </div>
                             </form>
                             <form class="pt-4">
                                 <div class="problem-form">

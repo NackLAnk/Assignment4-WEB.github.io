@@ -397,7 +397,7 @@
  /* three cards information */
 
  .card {
-     border-radius: 20px;
+     border-radius: 12px;
  }
 
  .width-card {
@@ -804,4 +804,30 @@
     background-color: #fff;
     padding: 10px 10px;
     margin: 10px 0 10px 0;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 100%;
+    background-color: #29BE97;
+    color: #2e2e2e;
+    padding: 5px;
+    border-radius: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }

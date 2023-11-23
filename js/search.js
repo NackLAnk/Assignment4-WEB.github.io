@@ -43,3 +43,15 @@ document.getElementById('searchInput').addEventListener('keypress', function (ev
     }
 });
 
+var searchInput = document.getElementById('searchInput');
+var tooltip = document.getElementById('searchTooltip');
+
+searchInput.addEventListener('mouseenter', function() {
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+});
+
+searchInput.addEventListener('mouseleave', function() {
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.opacity = '0';
+});
