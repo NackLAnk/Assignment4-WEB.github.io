@@ -62,18 +62,54 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-end nav-item">
+                <div class="d-flex justify-content-end nav-item flex-wrap">
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-text-active" href="index.html">HOME</a></li>
+                        <li><a class="nav-link navbar-padding navbar-active" href="index.html">HOME</a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">SERVICES</a></li>
+                        <li class="dropdown nav-item">
+                            <a role="button" id="DestinationDropDown" class=" nav-link navbar-padding navbar-active"
+                                data-bs-toggle="dropdown" href="#">DESTINATION</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="DestinationDropDown">
+                                <li>
+                                    <a href="Destination-List.html" class="dropdown-item">Destination List</a>
+                                </li>
+                                <li>
+                                    <a href="page404.html" class="dropdown-item">Destination Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">PRICING</a></li>
+                        <li>
+                            <a role="button" id="TourDropDown" data-bs-toggle="dropdown"
+                                class="nav-link navbar-padding navbar-text-active" href="#">TOURS</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="TourDropDown">
+                                <li>
+                                    <a href="Tour.html" class="dropdown-item navbar-text-active">Tour List</a>
+                                </li>
+                                <li>
+                                    <a href="Tour-details.html" class="dropdown-item">Tour Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">TOURS</a></li>
+                        <li>
+                            <a id="PagesDropDown" data-bs-toggle="dropdown" role="button"
+                                class="nav-link navbar-padding navbar-active" href="#">PAGES</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="PagesDropDown">
+                                <li>
+                                    <a class="dropdown-item" href="services.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page404.html">404</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-active" href="#Contact">CONTACT</a></li>
@@ -88,15 +124,14 @@
                                 <span class="align-middle highlighted-text ms-3 select-disable"> LOGIN </span>
                             </a>
                             <ul class="dropdown-menu select-disable" aria-labelledby="navbarDropdownMenuLinkRight">
-                                <li class="dropdown-item show-form"><i
-                                        class="fa fa-user-o dropdown-icon-padding show-form"></i> Profile</li>
-                                <li class="dropdown-item"><i class="fa fa-calendar-o dropdown-icon-padding"></i>
+                                <li class="dropdown-item show-form"><i class="fa fa-user-o show-form"></i> Profile</li>
+                                <li class="dropdown-item"><i class="fa fa-calendar-o"></i>
                                     Calendar</li>
-                                <li class="dropdown-item show-form"><i
-                                        class="fa fa-sign-in dropdown-icon-padding show-form" aria-hidden="true"></i>
+                                <li class="dropdown-item show-form"><i class="fa fa-sign-in show-form"
+                                        aria-hidden="true"></i>
                                     Sign Up</li>
                                 <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><i class="material-icons dropdown-icon-padding">&#xE8AC;</i>
+                                <li class="dropdown-item"><i class="material-icons">&#xE8AC;</i>
                                     Logout</li>
                             </ul>
                         </li>
@@ -105,7 +140,6 @@
             </div>
         </div>
     </header>
-    </head>
 
     <body>
         <section class="container-login forms-sign select-disable">
@@ -224,7 +258,7 @@
             <div class="carousel-inner select-disable">
                 <div class="carousel-item active">
                     <img src="images/carousel/carousel2-wp1.jpg" alt="c-wp1" class="d-block w-100">
-                    <h2 class="carousel-text">Tour List <br> <span class="h4 px-5">Home / Tour</span></h2>
+                    <h2 class="carousel-text">Tour List <br> <span class="h4 px-5">Home / Tour List</span></h2>
                 </div>
             </div>
         </div>
@@ -233,7 +267,7 @@
 
         <div class="container-fluid py-5" style="background-color: #F4FCFC;">
             <div class="container py-5">
-                <div class="pb-5"> 
+                <div class="pb-5">
                     <h2 class="yesteryear">time to take</h2>
                     <h2 class="abril-fatface">Perfect Holiday</h2>
                 </div>
@@ -246,7 +280,7 @@
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -273,7 +307,7 @@
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -300,7 +334,7 @@
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -330,7 +364,7 @@
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -357,7 +391,7 @@
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -384,7 +418,7 @@
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -400,36 +434,6 @@
                                         <span>18+</span>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br class="select-disable">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="image4.jpg" class="card-img-top" alt="Изображение 4">
-                            <div class="card-body">
-                                <h5 class="card-title">Карточка 4</h5>
-                                <p class="card-text">Описание карточки 4.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="image5.jpg" class="card-img-top" alt="Изображение 5">
-                            <div class="card-body">
-                                <h5 class="card-title">Карточка 5</h5>
-                                <p class="card-text">Описание карточки 5.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="image6.jpg" class="card-img-top" alt="Изображение 6">
-                            <div class="card-body">
-                                <h5 class="card-title">Карточка 6</h5>
-                                <p class="card-text">Описание карточки 6.</p>
                             </div>
                         </div>
                     </div>
@@ -454,7 +458,7 @@
 
         <!-- Help Panel -->
 
-        <div class="fab-wrapper">
+        <div id="myBtn" class="fab-wrapper">
             <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
             <label class="fab" for="fabCheckbox">
                 <span class="fab-dots fab-dots-1"></span>
@@ -462,18 +466,17 @@
                 <span class="fab-dots fab-dots-3"></span>
             </label>
             <div class="fab-wheel">
-                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
+                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play(); topFunction();">
                     <i class="fa fa-arrow-up"></i>
                 </a>
                 <a class="fab-action fab-action-2 text-decoration-none" href="game.html">
                     <i class="fa fa-play"></i>
                 </a>
-                <a class="fab-action fab-action-3 text-decoration-none" href="services.html">
+                <a class="fab-action fab-action-3 text-decoration-none" href="faq.html">
                     <i class="fas fa-info"></i>
                 </a>
             </div>
         </div>
-
         <!-- end -->
 
         <footer class="text-light" style="background-color: #151D2A;">
@@ -553,6 +556,14 @@
                 </div>
             </div>
         </footer>
+        <div id="loading-wrapper" class="loading-wrapper"></div>
+        <script>
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $(".loading-wrapper").fadeOut("slow");
+                }, 1200)
+            });
+        </script>
         <div class="overlay" id="overlay"></div>
         <script src="js/audiosound.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
@@ -560,6 +571,7 @@
         <script src="js/form_validation.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/card_carousel.js"></script>
+        <script src="js/topbutton.js"></script>
     </body>
 
 </html>

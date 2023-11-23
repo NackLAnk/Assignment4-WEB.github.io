@@ -62,18 +62,54 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-end nav-item">
+                <div class="d-flex justify-content-end nav-item flex-wrap">
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-text-active" href="index.html">HOME</a></li>
+                        <li><a class="nav-link navbar-padding navbar-active" href="index.html">HOME</a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">SERVICES</a></li>
+                        <li class="dropdown nav-item">
+                            <a role="button" id="DestinationDropDown" class=" nav-link navbar-padding navbar-active"
+                                data-bs-toggle="dropdown" href="#">DESTINATION</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="DestinationDropDown">
+                                <li>
+                                    <a href="Destination-List.html" class="dropdown-item">Destination List</a>
+                                </li>
+                                <li>
+                                    <a href="page404.html" class="dropdown-item">Destination Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">PRICING</a></li>
+                        <li>
+                            <a role="button" id="TourDropDown" data-bs-toggle="dropdown"
+                                class="nav-link navbar-padding navbar-active" href="index.html">TOURS</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="TourDropDown">
+                                <li>
+                                    <a href="Tour.html" class="dropdown-item">Tour List</a>
+                                </li>
+                                <li>
+                                    <a href="Tour-details.html" class="dropdown-item">Tour Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="Tour.html">TOURS</a></li>
+                        <li>
+                            <a id="PagesDropDown" data-bs-toggle="dropdown" role="button"
+                                class="nav-link navbar-padding navbar-text-active" href="#">PAGES</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="PagesDropDown">
+                                <li>
+                                    <a class="dropdown-item navbar-text-active" href="services.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page404.html">404</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-active" href="#Contact">CONTACT</a></li>
@@ -88,15 +124,14 @@
                                 <span class="align-middle highlighted-text ms-3 select-disable"> LOGIN </span>
                             </a>
                             <ul class="dropdown-menu select-disable" aria-labelledby="navbarDropdownMenuLinkRight">
-                                <li class="dropdown-item show-form"><i
-                                        class="fa fa-user-o dropdown-icon-padding show-form"></i> Profile</li>
-                                <li class="dropdown-item"><i class="fa fa-calendar-o dropdown-icon-padding"></i>
+                                <li class="dropdown-item show-form"><i class="fa fa-user-o show-form"></i> Profile</li>
+                                <li class="dropdown-item"><i class="fa fa-calendar-o"></i>
                                     Calendar</li>
-                                <li class="dropdown-item show-form"><i
-                                        class="fa fa-sign-in dropdown-icon-padding show-form" aria-hidden="true"></i>
+                                <li class="dropdown-item show-form"><i class="fa fa-sign-in show-form"
+                                        aria-hidden="true"></i>
                                     Sign Up</li>
                                 <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><i class="material-icons dropdown-icon-padding">&#xE8AC;</i>
+                                <li class="dropdown-item"><i class="material-icons">&#xE8AC;</i>
                                     Logout</li>
                             </ul>
                         </li>
@@ -105,7 +140,6 @@
             </div>
         </div>
     </header>
-    </head>
 
     <body>
         <section class="container-login forms-sign select-disable">
@@ -224,7 +258,7 @@
             <div class="carousel-inner select-disable">
                 <div class="carousel-item active">
                     <img src="images/carousel/carousel2-wp1.jpg" alt="c-wp1" class="d-block w-100">
-                    <h2 class="carousel-text">About our Services <br> <span class="h4 px-5">Home / Services</span></h2>
+                    <h2 class="carousel-text">About our Services <br> <span class="h4 px-5">Home / About US</span></h2>
                 </div>
             </div>
         </div>
@@ -233,15 +267,121 @@
 
         <div class="container-fluid py-5">
             <div class="container py-5 d-flex">
-                <div class="">
-                    <h2 class="yesteryear">Our Most</h2>
-                    <h2 class="abril-fatface pb-2">Popular Tours</h2>
-                    <h5 class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga aut error, sit suscipit quos laudantium eveniet consectetur. Voluptatem quia ducimus fugiat, dolores iusto laudantium non itaque culpa? Sint, veritatis.</h5>
-                    <a class="btn btn-primary px-5" href="#">Read more <i class="fa fa-arrow-right"
-                        aria-hidden="true"></i></a>
+                <div class="row py-5">
+                    <div class="col-md-6">
+                        <h2 class="yesteryear">Our Most</h2>
+                        <h2 class="abril-fatface pb-2">Popular Tours</h2>
+                        <h5 class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fuga aut error, sit
+                            suscipit quos laudantium eveniet consectetur. Voluptatem quia ducimus fugiat, dolores iusto
+                            laudantium non itaque culpa? Sint, veritatis.</h5>
+                        <a class="btn btn-primary px-5" href="#">Read more <i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-end px-5">
+                            <img class="services-img" src="images/tourist.jpg" alt="touris" width="600px"
+                                height="400px">
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-end px-5">
-                    <img class="services-img" src="images/tourist.jpg" alt="touris" width="600px" height="400px">
+            </div>
+        </div>
+
+        <!-- Video Fragment -->
+
+        <video id="fullscreen-video" class="video-hidden" controls onclick="toggleVideo()">
+            <source src="video/click-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="container-fluid-xs d-flex justify-content-center align-items-center">
+            <img class="wallpaper" src="images/wallpapers/wallpaper-AboutUs.jpg" alt="">
+            <div class="wallpaper-content">
+                <button onclick="openFullscreen(); playVideo();" href="#" class="check-red">
+                    <i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Our Trend -->
+
+        <div class="container-fluid-xs py-5" style="background-color: aliceblue;">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-md-5">
+                        <img src="images/wallpapers/wallpaper-small.jpg" class="services-img" height="300px" alt="img">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="yesteryear">Our Most</h2>
+                        <h2 class="abril-fatface">Popular Tours</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil minus repudiandae ducimus
+                            distinctio, sint dolore ipsum fugiat, in corrupti incidunt debitis reprehenderit quae earum
+                            reiciendis officiis rem molestias voluptas veritatis.
+                        </p>
+                        <div class="progress-bar">
+                            <span>Countryside</span>
+                            <div class="progress" style="width: 76%;"></div>
+                            <span class="progress-label">76%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <span>Vineyard</span>
+                            <div class="progress" style="width: 82%;"></div>
+                            <span class="progress-label">82%</span>
+                        </div>
+
+                        <div class="progress-bar">
+                            <span>Wine Tasting</span>
+                            <div class="progress" style="width: 71%;"></div>
+                            <span class="progress-label">71%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid-xs py-5">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-md-6">
+                        <h2 class="yesteryear">Why</h2>
+                        <h2 class="abril-fatface">Choose Us</h2>
+                        <div class="py-3">
+                            <div class="d-flex justify-content-start py-3">
+                                <i class="fa fa-google-wallet fa-4x highlighted-text-2" aria-hidden="true"></i>
+                                <div class="px-5">
+                                    <span class="Text-details-Bold">
+                                        BOOKING WITH <br>
+                                        SPREAD PAYMENTS
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-start py-3">
+                                <i class="fa fa-bed fa-4x highlighted-text-2" aria-hidden="true"></i>
+                                <div class="px-5">
+                                    <span class="Text-details-Bold">
+                                        FULLY LICENSED <br>
+                                        TOUR OPERATOR 
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-start py-3">
+                                <i class="fa fa-file-text fa-4x highlighted-text-2" aria-hidden="true"></i>
+                                <div class="px-5">
+                                    <span class="Text-details-Bold">
+                                        SLEEP & TRAVEL <br>
+                                         IN COMFORT
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="services-img" src="images/wallpapers/wallpaper-small2.jpg" height="450px" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,7 +403,7 @@
 
         <!-- Help Panel -->
 
-        <div class="fab-wrapper">
+        <div id="myBtn" class="fab-wrapper">
             <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
             <label class="fab" for="fabCheckbox">
                 <span class="fab-dots fab-dots-1"></span>
@@ -271,13 +411,13 @@
                 <span class="fab-dots fab-dots-3"></span>
             </label>
             <div class="fab-wheel">
-                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
+                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play(); topFunction();">
                     <i class="fa fa-arrow-up"></i>
                 </a>
                 <a class="fab-action fab-action-2 text-decoration-none" href="game.html">
                     <i class="fa fa-play"></i>
                 </a>
-                <a class="fab-action fab-action-3 text-decoration-none" href="#">
+                <a class="fab-action fab-action-3 text-decoration-none" href="faq.html">
                     <i class="fas fa-info"></i>
                 </a>
             </div>
@@ -362,6 +502,50 @@
                 </div>
             </div>
         </footer>
+        <div id="loading-wrapper" class="loading-wrapper"></div>
+        <script>
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $(".loading-wrapper").fadeOut("slow");
+                }, 1200)
+            });
+
+            var elem = document.getElementById("fullscreen-video");
+
+            function openFullscreen() {
+                elem.classList.remove("video-hidden");
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+            }
+
+            function toggleVideo() {
+                if (elem.paused) {
+                    playVideo();
+                } else {
+                    pauseVideo();
+                }
+            }
+
+            function playVideo() {
+                elem.play();
+            }
+
+            function pauseVideo() {
+                elem.pause();
+            }
+
+            document.addEventListener("fullscreenchange", function () {
+                if (!document.fullscreenElement) {
+                    elem.classList.add("video-hidden");
+                    pauseVideo();
+                }
+            });
+        </script>
         <div class="overlay" id="overlay"></div>
         <script src="js/audiosound.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
@@ -369,6 +553,7 @@
         <script src="js/form_validation.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/card_carousel.js"></script>
+        <script src="js/topbutton.js"></script>
     </body>
 
 </html>

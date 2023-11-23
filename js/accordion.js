@@ -6,7 +6,7 @@ let imageURLs = [
   "images/accordion/4.jpg",
 ];
 
-let deviceType = "mouse"; 
+let deviceType = "mouse";
 
 items.forEach((item, index) => {
   let img = document.createElement("img");
@@ -26,3 +26,19 @@ items.forEach((item, index) => {
     item.style.flex = "1";
   });
 });
+
+const items2 = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items2.length; i++) {
+    items2[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items2.forEach(item2 => item2.addEventListener('click', toggleAccordion));

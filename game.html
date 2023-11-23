@@ -63,18 +63,54 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-end nav-item">
+                <div class="d-flex justify-content-end nav-item flex-wrap">
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-text-active" href="index.html">HOME</a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">SERVICES</a></li>
+                        <li class="dropdown nav-item">
+                            <a role="button" id="DestinationDropDown" class=" nav-link navbar-padding navbar-active"
+                                data-bs-toggle="dropdown" href="#">DESTINATION</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="DestinationDropDown">
+                                <li>
+                                    <a href="Destination-List.html" class="dropdown-item">Destination List</a>
+                                </li>
+                                <li>
+                                    <a href="page404.html" class="dropdown-item">Destination Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">PRICING</a></li>
+                        <li>
+                            <a role="button" id="TourDropDown" data-bs-toggle="dropdown"
+                                class="nav-link navbar-padding navbar-active" href="#">TOURS</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="TourDropDown">
+                                <li>
+                                    <a href="Tour.html" class="dropdown-item">Tour List</a>
+                                </li>
+                                <li>
+                                    <a href="Tour-details.html" class="dropdown-item">Tour Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">TOURS</a></li>
+                        <li>
+                            <a id="PagesDropDown" data-bs-toggle="dropdown" role="button"
+                                class="nav-link navbar-padding navbar-active" href="#">PAGES</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="PagesDropDown">
+                                <li>
+                                    <a class="dropdown-item" href="services.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page404.html">404</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-active" href="#Contact">CONTACT</a></li>
@@ -89,15 +125,14 @@
                                 <span class="align-middle highlighted-text ms-3 select-disable"> LOGIN </span>
                             </a>
                             <ul class="dropdown-menu select-disable" aria-labelledby="navbarDropdownMenuLinkRight">
-                                <li class="dropdown-item show-form"><i
-                                        class="fa fa-user-o dropdown-icon-padding show-form"></i> Profile</li>
-                                <li class="dropdown-item"><i class="fa fa-calendar-o dropdown-icon-padding"></i>
+                                <li class="dropdown-item show-form"><i class="fa fa-user-o show-form"></i> Profile</li>
+                                <li class="dropdown-item"><i class="fa fa-calendar-o"></i>
                                     Calendar</li>
-                                <li class="dropdown-item show-form"><i
-                                        class="fa fa-sign-in dropdown-icon-padding show-form" aria-hidden="true"></i>
+                                <li class="dropdown-item show-form"><i class="fa fa-sign-in show-form"
+                                        aria-hidden="true"></i>
                                     Sign Up</li>
                                 <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><i class="material-icons dropdown-icon-padding">&#xE8AC;</i>
+                                <li class="dropdown-item"><i class="material-icons">&#xE8AC;</i>
                                     Logout</li>
                             </ul>
                         </li>
@@ -106,7 +141,6 @@
             </div>
         </div>
     </header>
-    </head>
 
     <body>
         <section class="container-login forms-sign select-disable">
@@ -320,6 +354,14 @@
                 </div>
             </div>
         </footer>
+        <div id="loading-wrapper" class="loading-wrapper"></div>
+        <script>
+            $(window).on("load", function () {
+                setTimeout(function () {
+                    $(".loading-wrapper").fadeOut("slow");
+                }, 1200)
+            });
+        </script>
         <div class="overlay" id="overlay"></div>
         <script src="js/game.js"></script>
         <script src="js/swiper-bundle.min.js"></script>

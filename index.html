@@ -61,18 +61,52 @@
                         </a>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-end nav-item">
+                <div class="d-flex justify-content-end nav-item flex-wrap">
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-text-active" href="index.html">HOME</a></li>
+                        <li><a class="nav-link navbar-padding navbar-text-active" href="#">HOME</a></li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="services.html">SERVICES</a></li>
+                        <li class="dropdown nav-item">
+                            <a role="button" id="DestinationDropDown" class=" nav-link navbar-padding navbar-active"
+                                data-bs-toggle="dropdown" href="#">DESTINATION</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="DestinationDropDown">
+                                <li>
+                                    <a href="Destination-List.html" class="dropdown-item">Destination List</a>
+                                </li>
+                                <li>
+                                    <a href="page404.html" class="dropdown-item">Destination Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="#">PRICING</a></li>
+                        <li>
+                            <a role="button" id="TourDropDown" data-bs-toggle="dropdown" class="nav-link navbar-padding navbar-active" href="#">TOURS</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="TourDropDown">
+                                <li>
+                                    <a href="Tour.html" class="dropdown-item">Tour List</a>
+                                </li>
+                                <li>
+                                    <a href="Tour-details.html" class="dropdown-item">Tour Details</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
-                        <li><a class="nav-link navbar-padding navbar-active" href="Tour.html">TOURS</a></li>
+                        <li>
+                            <a id="PagesDropDown" data-bs-toggle="dropdown" role="button" class="nav-link navbar-padding navbar-active" href="#">PAGES</a>
+                            <ul class="dropdown-menu select-disable" aria-labelledby="PagesDropDown">
+                                <li>
+                                    <a class="dropdown-item" href="services.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="page404.html">404</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav">
                         <li><a class="nav-link navbar-padding navbar-active" href="#Contact">CONTACT</a></li>
@@ -88,14 +122,14 @@
                             </a>
                             <ul class="dropdown-menu select-disable" aria-labelledby="navbarDropdownMenuLinkRight">
                                 <li class="dropdown-item show-form"><i
-                                        class="fa fa-user-o dropdown-icon-padding show-form"></i> Profile</li>
-                                <li class="dropdown-item"><i class="fa fa-calendar-o dropdown-icon-padding"></i>
+                                        class="fa fa-user-o show-form"></i> Profile</li>
+                                <li class="dropdown-item"><i class="fa fa-calendar-o"></i>
                                     Calendar</li>
                                 <li class="dropdown-item show-form"><i
-                                        class="fa fa-sign-in dropdown-icon-padding show-form" aria-hidden="true"></i>
+                                        class="fa fa-sign-in show-form" aria-hidden="true"></i>
                                     Sign Up</li>
                                 <li class="dropdown-divider"></li>
-                                <li class="dropdown-item"><i class="material-icons dropdown-icon-padding">&#xE8AC;</i>
+                                <li class="dropdown-item"><i class="material-icons">&#xE8AC;</i>
                                     Logout</li>
                             </ul>
                         </li>
@@ -104,7 +138,6 @@
             </div>
         </div>
     </header>
-    </head>
 
     <body>
         <section class="container-login forms-sign select-disable">
@@ -277,7 +310,7 @@
                             </div>
                             <div class="topline pb-3"></div>
                             <div class="px-3">
-                                <a class="btn btn-primary" role="button">Book Now</a>
+                                <a class="btn btn-primary" href="Tour-details.html" role="button">Book Now</a>
                             </div>
                         </div>
                         <div class="card swiper-slide pb-3">
@@ -300,7 +333,7 @@
                             </div>
                             <div class="topline pb-3"></div>
                             <div class="px-3 d-flex">
-                                <a class="btn btn-primary" role="button">Book Now</a>
+                                <a class="btn btn-primary" href="Tour-details.html" role="button">Book Now</a>
                             </div>
                         </div>
                         <div class="card swiper-slide pb-3">
@@ -323,7 +356,7 @@
                             </div>
                             <div class="topline pb-3"></div>
                             <div class="px-3">
-                                <a class="btn btn-primary" role="button">Book Now</a>
+                                <a class="btn btn-primary" href="Tour-details.html" role="button">Book Now</a>
                             </div>
                         </div>
                         <div class="card swiper-slide pb-3">
@@ -346,7 +379,7 @@
                             </div>
                             <div class="topline pb-3"></div>
                             <div class="px-3">
-                                <a class="btn btn-primary" role="button">Book Now</a>
+                                <a class="btn btn-primary" href="Tour-details.html" role="button">Book Now</a>
                             </div>
                         </div>
                         <div class="card swiper-slide pb-3">
@@ -369,7 +402,7 @@
                             </div>
                             <div class="topline pb-3"></div>
                             <div class="px-3">
-                                <a class="btn btn-primary" role="button">Book Now</a>
+                                <a class="btn btn-primary" href="Tour-details.html" role="button">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -390,37 +423,37 @@
 
                     <div class="col-md-4 pt-3">
                         <div class="card">
-                            <a class="card-info-details text-decoration-none" href="#">
+                            <div class="card-info-details text-decoration-none" href="#">
                                 <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i></span>
                                 <div class="title-paragraph">
                                     <h3 class="title">Shops & Boutiques</h3>
                                     <h4 class="paragraph">Vivamus semper ultricies leo. eget vulputate.</h4>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 pt-3">
                         <div class="card">
-                            <a class="card-info-details text-decoration-none" href="#">
+                            <div class="card-info-details text-decoration-none" href="#">
                                 <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
                                 <div class="title-paragraph">
                                     <h3 class="title">Sightseeing</h3>
                                     <h4 class="paragraph">Vivamus semper ultricies leo. eget vulputate.</h4>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 pt-3">
                         <div class="card">
-                            <a class="card-info-details text-decoration-none" href="#">
+                            <div class="card-info-details text-decoration-none" href="#">
                                 <i class="fa fa-camera fa-2x" aria-hidden="true"></i>
                                 <div class="title-paragraph">
                                     <h3 class="title">Restaurants</h3>
                                     <h4 class="paragraph">Vivamus semper ultricies leo. eget vulputate.</h4>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -462,19 +495,23 @@
             <br class="select-disable">
             <div class="container">
                 <div class="d-flex justify-content-center py-5">
-                    <div>
-                        <img class="img-AU" src="images/card/pic-au.jpg" alt="auimg">
-                    </div>
-                    <div class="px-5">
-                        <h2 class="yesteryear">a few words</h2>
-                        <h2 class="abril-fatface">About Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque facilis
-                            repudiandae
-                            aliquam quae, atque maiores accusantium dolor praesentium mollitia voluptates est ex
-                            explicabo
-                            voluptas porro id! Illum, incidunt quod?</p>
-                        <br class="select-disable">
-                        <a class="btn btn-primary" href="">Read More</a>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="img-AU" src="images/card/pic-au.jpg" alt="auimg">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="">
+                                <h2 class="yesteryear">a few words</h2>
+                                <h2 class="abril-fatface">About Us</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque facilis
+                                    repudiandae
+                                    aliquam quae, atque maiores accusantium dolor praesentium mollitia voluptates est ex
+                                    explicabo
+                                    voluptas porro id! Illum, incidunt quod?</p>
+                                <br class="select-disable">
+                                <a class="btn btn-primary" href="">Read More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -486,7 +523,7 @@
         <!-- Cards Offers -->
 
         <div class="container-fluid py-5" style="background-color: #F4FCFC;">
-            <div class="container py-5">
+            <div class="container my-5">
                 <div class="pb-5">
                     <h2 class="yesteryear">Our trending</h2>
                     <h2 class="abril-fatface">Best Offers</h2>
@@ -498,12 +535,12 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="images/card/par-1.jpg" class="card-img-top" alt="Изображение 1">
-                            <div class="card-body pt-5">
+                            <div class="card-body mt-5">
                                 <h5 class="card-title abril-fatface2">France</h5>
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -525,12 +562,12 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="images/card/egp-1.jpg" class="card-img-top" alt="Изображение 2">
-                            <div class="card-body pt-5">
+                            <div class="card-body mt-5">
                                 <h5 class="card-title abril-fatface2">Egypt</h5>
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -552,12 +589,12 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="images/card/dub-1.jpg" class="card-img-top" alt="Изображение 3">
-                            <div class="card-body pt-5">
+                            <div class="card-body mt-5">
                                 <h5 class="card-title abril-fatface2">Dubai</h5>
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -582,12 +619,12 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="images/card/tai-1.jpg" class="card-img-top" alt="Изображение 4">
-                            <div class="card-body pt-5">
+                            <div class="card-body mt-5">
                                 <h5 class="card-title abril-fatface2">Tailand</h5>
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -609,12 +646,12 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="images/card/vie-1.jpg" class="card-img-top" alt="Изображение 5">
-                            <div class="card-body pt-5">
+                            <div class="card-body mt-5">
                                 <h5 class="card-title abril-fatface2">Vietnam</h5>
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -636,12 +673,12 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="images/accordion/3.jpg" class="card-img-top" alt="Изображение 6">
-                            <div class="card-body pt-5">
+                            <div class="card-body mt-5">
                                 <h5 class="card-title abril-fatface2">Italy</h5>
                                 <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes,
                                     nascetur ridiculus mus.</p>
                                 <div class="justify-content-between d-flex align-items-center py-3">
-                                    <a class="btn-primary btn" href="#">Book Now</a>
+                                    <a class="btn-primary btn" href="Tour-details.html">Book Now</a>
                                     <span class="highlighted-text-2">$1000.00</span>
                                 </div>
                             </div>
@@ -670,45 +707,47 @@
         <div class="mouse-parallax">
             <div class="mouse-parallax-bg"></div>
             <div class="container d-flex justify-content-center py-5" style="position: absolute; left:10%;">
-                <h2 class="yesteryear">Read The Top</h2>
-                <div class="container d-flex justify-content-center pt-3" style="position: absolute; left:0;">
+                <h2 class="yesteryear pt-3" style="position: absolute; top: 0;">Read The Top</h2>
+                <div class="container d-flex justify-content-center pt-5" style="position: absolute; left:0; top: 0;">
                     <h2 class="abril-fatface">Lates Reviews</h2>
                 </div>
             </div>
-            <div class="container d-flex" style="padding-top: 220px; padding-left: 190px;">
-                <div class="col-md-5">
-                    <div class="card">
-                        <a class="card-info-details text-decoration-none" href="#" style="background-color: #fff;">
-                            <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
-                            <div class="title-paragraph px-1">
-                                <h3 class="title">Miss Elena</h3>
-                                <h4 class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h4>
+            <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <a class="card-info-details text-decoration-none" href="#" style="background-color: #fff;">
+                                <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
+                                <div class="title-paragraph px-1">
+                                    <h3 class="title">Miss Elena</h3>
+                                    <h4 class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h4>
+                                </div>
+                            </a>
+                            <div class="d-flex pb-2 px-4" style="color: #29BE97;">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                        </a>
-                        <div class="d-flex pb-2 px-4" style="color: #29BE97;">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5" style="padding-left: 20px;">
-                    <div class="card">
-                        <a class="card-info-details text-decoration-none" href="#" style="background-color: #fff;">
-                            <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
-                            <div class="title-paragraph">
-                                <h3 class="title">Mr. Adam</h3>
-                                <h4 class="paragraph">Vivamus semper ultricies leo. eget vulputate.</h4>
+                    <div class="col-md-6" style="padding-left: 20px;">
+                        <div class="card">
+                            <a class="card-info-details text-decoration-none" href="#" style="background-color: #fff;">
+                                <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
+                                <div class="title-paragraph">
+                                    <h3 class="title">Mr. Adam</h3>
+                                    <h4 class="paragraph">Vivamus semper ultricies leo. eget vulputate.</h4>
+                                </div>
+                            </a>
+                            <div class="d-flex pb-2 px-4" style="color: #29BE97;">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
                             </div>
-                        </a>
-                        <div class="d-flex pb-2 px-4" style="color: #29BE97;">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
@@ -732,7 +771,7 @@
                             <input type="email" placeholder="Email" class="input bg-white">
                         </div>
                         <div class="media-options">
-                            <a href="#" class="btn btn-primary">Submit</a>
+                            <a class="btn btn-primary">Submit</a>
                         </div>
                     </form>
                 </div>
@@ -741,7 +780,7 @@
 
         <!-- Help Panel -->
 
-        <div class="fab-wrapper">
+        <div id="myBtn" class="fab-wrapper">
             <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
             <label class="fab" for="fabCheckbox">
                 <span class="fab-dots fab-dots-1"></span>
@@ -749,13 +788,13 @@
                 <span class="fab-dots fab-dots-3"></span>
             </label>
             <div class="fab-wheel">
-                <a id="showMessage" class="fab-action fab-action-1 text-decoration-none" onclick="audio.play();" href="#navbar">
+                <a class="fab-action fab-action-1 text-decoration-none" onclick="audio.play(); topFunction();">
                     <i class="fa fa-arrow-up"></i>
                 </a>
-                <a class="fab-action fab-action-2 text-decoration-none" onclick="audio.play();" href="game.html">
+                <a class="fab-action fab-action-2 text-decoration-none" href="game.html">
                     <i class="fa fa-play"></i>
                 </a>
-                <a class="fab-action fab-action-3 text-decoration-none" onclick="audio.play();" href="services.html">
+                <a class="fab-action fab-action-3 text-decoration-none" href="faq.html">
                     <i class="fas fa-info"></i>
                 </a>
             </div>
@@ -839,6 +878,14 @@
                     </div>
                 </div>
             </div>
+            <div id="loading-wrapper" class="loading-wrapper"></div>
+            <script>
+                $(window).on("load", function () {
+                    setTimeout(function () {
+                        $(".loading-wrapper").fadeOut("slow");
+                    }, 1200)
+                });
+            </script>
         </footer>
         <script>
             const showMessageButton = document.getElementById('showMessage');
@@ -867,6 +914,7 @@
         <script src="js/form_validation.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/card_carousel.js"></script>
+        <script src="js/topbutton.js"></script>
     </body>
 
 </html>
