@@ -158,7 +158,6 @@
                             <input type="email" placeholder="Email" class="input">
                         </div>
                         <div class="email-error error-message"></div>
-
                         <div class="field input-field">
                             <input type="password" placeholder="Password" class="password">
                             <i class='bx bx-hide eye-icon'></i>
@@ -175,7 +174,7 @@
                     </form>
 
                     <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                        <span>Don't have an account? <a href="#" class="link signup-link">Sign up</a></span>
                     </div>
                 </div>
 
@@ -206,26 +205,64 @@
                                     style="color: #212529;"></i></a>
                         </div>
                     </div>
-                    <form action="#" onsubmit="return validateSignupForm();">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-                        <div class="email-error error-message"></div>
+                    <form id="regForm" action="">
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab field pb-3">
+                            <p><input placeholder="First name"
+                                    oninput="validateInput(this, /^[a-zA-Z]{4,}$/, 'errorFirstName')" required>
+                                <span class="error-message" id="errorFirstName">
+                            </p>
 
-                        <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
+                            <p><input placeholder="Last name"
+                                    oninput="validateInput(this, /^[a-zA-Z]{4,}$/, 'errorLastName')" required>
+                                <span class="error-message" id="errorLastName">
+                            </p>
                         </div>
-                        <div class="password-error error-message"></div>
 
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="confirm-password">
-                            <i class='bx bx-hide eye-icon'></i>
+                        <div class="tab field">
+                            <p><input type="email" placeholder="Email"
+                                    oninput="validateInput(this, /^\S+@\S+\.\S+$/, 'errorEmail')" required>
+                                <span class="error-message" id="errorEmail"></span>
+                            </p>
+
+                            <p><input type="tel" placeholder="Phone"
+                                    oninput="validateInput(this, /^\d{11}$/, 'errorPhone')" required>
+                                <span class="error-message" id="errorPhone"></span>
+                            </p>
                         </div>
-                        <div class="password-error error-message"></div>
+
+                        <div class="tab field">
+                            <p><input placeholder="Login"
+                                    oninput="validateInput(this, /^[a-zA-Z0-9_]{6}$/, 'errorLogin')" required>
+                                <span class="error-message" id="errorLogin"></span>
+                            </p>
+
+                            <p><input type="password" placeholder="Password"
+                                    oninput="validateInput(this, /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/, 'errorPassword')"
+                                    required>
+                                <span class="error-message" id="errorPassword"></span>
+                            </p>
+                        </div>
+
+                        <div class="tab" id="reloadMessage">
+                            <br class="select-disable">
+                            <h2 class="abril-fatface2">Done!</h2>
+                            <br class="select-disable">
+                            <div id="myProgress">
+                                <div id="myBar"></div>
+                            </div>
+                            <h5 id="reloadMessage2">Restarting...</h5>
+                        </div>
+
+                        <div style="text-align:center;margin-top:90px;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
 
                         <div class="media-options">
-                            <a href="#" class="field Login text-decoration-none"
-                                onclick="return validateSignupForm();">Sign up</a>
+                            <a href="#" class="field Login text-decoration-none" id="nextBtn" onclick="nextPrev(1)">Sign
+                                up</a>
                         </div>
                     </form>
 
@@ -239,14 +276,14 @@
                 <div class="media-options">
                     <a href="#" class="field facebook">
                         <i class='bx bxl-facebook facebook-icon'></i>
-                        <span>Login with Facebook</span>
+                        <span>Sign up with Facebook</span>
                     </a>
                 </div>
 
                 <div class="media-options">
                     <a href="#" class="field google">
                         <img src="images/icon/darkStyle/google-logo.png" alt="" class="google-img">
-                        <span>Login with Google</span>
+                        <span>Sign up with Google</span>
                     </a>
                 </div>
             </div>
@@ -362,7 +399,7 @@
                                 <div class="px-5">
                                     <span class="Text-details-Bold">
                                         FULLY LICENSED <br>
-                                        TOUR OPERATOR 
+                                        TOUR OPERATOR
                                     </span>
                                 </div>
                             </div>
@@ -371,12 +408,12 @@
                                 <div class="px-5">
                                     <span class="Text-details-Bold">
                                         SLEEP & TRAVEL <br>
-                                         IN COMFORT
+                                        IN COMFORT
                                     </span>
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
                     </div>
                     <div class="col-md-6">
